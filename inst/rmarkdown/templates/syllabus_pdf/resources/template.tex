@@ -54,12 +54,7 @@
 \includegraphics[width=0.3\linewidth]{TU_Darmstadt_Logo.png}
 \vspace{0.25cm}
 
-
-\begin{minipage}[t][98mm][t]{0.60\textwidth}
-\fontsize{8}{10}{\textbf{\textcolor{TUColor}{$program$}}}
-
-Akademisches Jahr $year$
-\vspace{0.25cm}
+\begin{minipage}[t][80mm][t]{0.60\textwidth}
 
 \textbf{\textcolor{TUColor}{$title$}}
 
@@ -69,6 +64,11 @@ $code$ -- $semester$ -- $credits$ ECTS
 \textbf{\textcolor{TUColor}{Seminarbeschreibung}}
 
 $description$
+
+\vspace{0.25cm}
+
+\fontsize{8}{10}{\textbf{\textcolor{TUColor}{$program$}}}
+
 \vspace{0.25cm}
 	\end{minipage}%
 	\hspace{0.5cm}\vrule{}\hspace{0.5cm}
@@ -99,7 +99,6 @@ $prof-office-hours$
 	\end{minipage}
 	\end{minipage}
 	\hrule{}
-	\vspace{0.5cm}
 	
 \textbf{\textcolor{TUColor}{Syllabus}}	
 
@@ -119,14 +118,6 @@ $materials$$endif$
 $if(evaluation)$\section*{Bewertung}
 
 $evaluation$$endif$
-
-$if(policies)$\section*{Course Policies}
-
-$policies$$endif$
-
-$if(bibimport)$\section*{Import Bibliography}
-
-$bibimport$$endif$
 
 % \newpage
 
