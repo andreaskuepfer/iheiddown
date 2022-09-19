@@ -6,7 +6,7 @@
 \usepackage{sectsty}
 \DeactivateWarningFilters[temp] % So nothing unrelated gets silenced
 \sectionfont{\fontsize{12}{15}\selectfont}
-\subsectionfont{\color[HTML]{5D85C3}\fontsize{10}{12}\selectfont}
+\subsectionfont{\color{TUColor}\fontsize{10}{12}\selectfont}
 
 \usepackage{calc}
 \usepackage[T1]{fontenc}
@@ -22,9 +22,10 @@
 \usepackage{longtable}
 \usepackage{hanging}
 \usepackage{quotes}
+\definecolor{TUcolor}{HTML}{5D85C3}
 
 \renewcommand{\thesection}{}% Remove section references...
-\renewcommand{\thesubsection}{\textcolor[HTML]{5D85C3} Woche \arabic{subsection}}%... from subsections
+\renewcommand{\thesubsection}{\textcolor{TUColor} Woche \arabic{subsection}}%... from subsections
 
 \setlength{\parindent}{0cm}
 \setlength{\parskip}{\baselineskip}
@@ -54,17 +55,17 @@
 
 
 \begin{minipage}[t][98mm][t]{0.60\textwidth}
-\textbf{\textcolor[HTML]{5D85C3}{$program$}}
+\textbf{\textcolor{TUColor}{$program$}}
 
 Akademisches Jahr $year$
 \vspace{0.25cm}
 
-\textbf{\textcolor[HTML]{5D85C3}{$title$}}
+\textbf{\textcolor{TUColor}{$title$}}
 
 $code$ -- $semester$ -- $credits$ ECTS
 \vspace{0.25cm}
 
-\textbf{\textcolor[HTML]{5D85C3}{Seminarbeschreibung}}
+\textbf{\textcolor{TUColor}{Seminarbeschreibung}}
 
 $description$
 \vspace{0.25cm}
@@ -99,7 +100,7 @@ $prof-office-hours$
 	\hrule{}
 	\vspace{0.5cm}
 	
-\textbf{\textcolor[HTML]{5D85C3}{Syllabus}}	
+\textbf{\textcolor{TUColor}{Syllabus}}	
 
 $if(aims)$\section*{Ziele des Seminars}
 
