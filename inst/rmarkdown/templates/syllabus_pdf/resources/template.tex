@@ -5,8 +5,6 @@
 \WarningFilter[temp]{latex}{Command} % silence the warning
 \usepackage{sectsty}
 \DeactivateWarningFilters[temp] % So nothing unrelated gets silenced
-\sectionfont{\fontsize{12}{15}\selectfont}
-\subsectionfont{\color{TUColor}\fontsize{10}{12}\selectfont}
 
 \usepackage{calc}
 \usepackage[T1]{fontenc}
@@ -23,6 +21,9 @@
 \usepackage{hanging}
 \usepackage{quotes}
 \definecolor{TUcolor}{HTML}{5D85C3}
+
+\sectionfont{\fontsize{12}{15}\selectfont}
+\subsectionfont{\color{TUColor}\fontsize{10}{12}\selectfont}
 
 \renewcommand{\thesection}{}% Remove section references...
 \renewcommand{\thesubsection}{\textcolor{TUColor} Woche \arabic{subsection}}%... from subsections
