@@ -13,6 +13,6 @@
 advdate <- function(startdate, week) {
   Sys.setlocale("LC_TIME", "de_DE")
   zadv <- as.Date(startdate) + 7 * (week - 1)
-  tmp <- paste0("(", trimws(format(zadv, format = "%e %b, %Y")), ")")
+  tmp <- paste0("(", trimws(format(zadv, format = "%e. %b %Y")), ")")
   return(tmp)
 }
