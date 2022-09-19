@@ -6,7 +6,7 @@
 \usepackage{sectsty}
 \DeactivateWarningFilters[temp] % So nothing unrelated gets silenced
 \sectionfont{\fontsize{12}{15}\selectfont}
-\subsectionfont{\color{red}\fontsize{10}{12}\selectfont}
+\subsectionfont{\color{5D85C3}\fontsize{10}{12}\selectfont}
 
 \usepackage{calc}
 \usepackage[T1]{fontenc}
@@ -24,15 +24,15 @@
 \usepackage{quotes}
 
 \renewcommand{\thesection}{}% Remove section references...
-\renewcommand{\thesubsection}{\textcolor{red} Week \arabic{subsection}}%... from subsections
+\renewcommand{\thesubsection}{\textcolor{5D85C3} Woche \arabic{subsection}}%... from subsections
 
 \setlength{\parindent}{0cm}
 \setlength{\parskip}{\baselineskip}
 \usepackage[
   colorlinks  = true,
-  urlcolor    = red,
-  citecolor   = red,
-  linkcolor   = red % Sets the color of the citations
+  urlcolor    = 5D85C3,
+  citecolor   = 5D85C3,
+  linkcolor   = 5D85C3 % Sets the color of the citations
 ]{hyperref}
 \author{$prof$}
 
@@ -54,17 +54,17 @@
 
 
 \begin{minipage}[t][98mm][t]{0.60\textwidth}
-\textbf{\textcolor{red}{$program$}}
+\textbf{\textcolor{5D85C3}{$program$}}
 
-Academic year $year$
+Akademisches Jahr $year$
 \vspace{0.25cm}
 
-\textbf{\textcolor{red}{$title$}}
+\textbf{\textcolor{5D85C3}{$title$}}
 
 $code$ -- $semester$ -- $credits$ ECTS
 \vspace{0.25cm}
 
-\textbf{\textcolor{red}{Course Description}}
+\textbf{\textcolor{5D85C3}{Seminarbeschreibung}}
 
 $description$
 \vspace{0.25cm}
@@ -72,7 +72,7 @@ $description$
 	\hspace{0.5cm}\vrule{}\hspace{0.5cm}
 	\begin{minipage}[t][95mm][t]{0.30\textwidth}
 	\begin{minipage}[t][37mm][t]{\textwidth}
-	\textbf{PROFESSOR}\\
+	\textbf{Dozent}\\
 	
 	$prof$
 	
@@ -80,45 +80,41 @@ $description$
 	$prof-email$
 	\vspace{0.1cm}
 	
-Office hours: \\
+Sprechstunde: \\
 $location$,\\
 $prof-office-hours$
 	
 	\end{minipage}
 	\vspace{1cm}\hrule{}\vspace{0.5cm}
 	\begin{minipage}[t][38mm][t]{\textwidth}
-	\textbf{ASSISTANT}\\
+	\textbf{Technische Unterstützung}\\
 	
 	$ta$
 
 	\vspace{0.1cm}
 	$ta-email$
-	\vspace{0.1cm}
-
-Office hours: \\
-$ta-office-hours$
 
 	\end{minipage}
 	\end{minipage}
 	\hrule{}
 	\vspace{0.5cm}
 	
-\textbf{\textcolor{red}{Syllabus}}	
+\textbf{\textcolor{5D85C3}{Syllabus}}	
 
-$if(aims)$\section*{Course Aims}
+$if(aims)$\section*{Ziele des Seminars}
 
 $aims$$endif$
 
-$if(structure)$\section*{Course Structure}
+$if(structure)$\section*{Struktur des Seminars}
 
 $structure$$endif$
 
-$if(materials)$\section*{Course Materials}
+$if(materials)$\section*{Materialien}
 
 $materials$$endif$
 
 %\newpage
-$if(evaluation)$\section*{Course Evaluation}
+$if(evaluation)$\section*{Bewertung}
 
 $evaluation$$endif$
 
@@ -132,13 +128,13 @@ $bibimport$$endif$
 
 % \newpage
 
-\section*{Course Schedule}
+\section*{Seminarplan}
 
 $body$
 
 $if(draft)$
 \centering
-	-- This syllabus is subject to change --
+	-- Dieser Syllabus kann sich im Laufe des Semesters noch einmal ändern --
 $endif$
 
 \end{document}
